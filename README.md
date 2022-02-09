@@ -1,2 +1,2 @@
 # BiteMe-
-A system for managing food orders from restaurants.
+The system manages food orders from restaurants.
