@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MonthlyReportPageController">
+   <children>
+      <AnchorPane layoutX="-73.0" layoutY="-103.0" prefHeight="948.0" prefWidth="529.0" style="-fx-background-color: #FEF5D1;">
+         <children>
+            <AnchorPane layoutX="86.0" layoutY="515.0" prefHeight="247.0" prefWidth="431.0" style="-fx-border-color: #000000;">
+               <children>
+                  <Label fx:id="lblRevFromDesserts11212" layoutX="63.0" layoutY="129.0" prefHeight="20.0" prefWidth="133.0" text="Number of drinks:">
+                     <font>
+                        <Font name="Gill Sans MT" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblRevFromDesserts112121" layoutX="48.0" layoutY="168.0" prefHeight="20.0" prefWidth="149.0" text="Number of desserts:">
+                     <font>
+                        <Font name="Gill Sans MT" size="17.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <AnchorPane layoutX="86.0" layoutY="777.0" prefHeight="121.0" prefWidth="431.0" style="-fx-border-color: #000000;">
+               <children>
+                  <Text layoutX="8.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Performance Report:" textAlignment="CENTER" wrappingWidth="207.955078125">
+                     <font>
+                        <Font name="Gill Sans MT" size="23.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="85.0" layoutY="263.0" prefHeight="247.0" prefWidth="431.0" style="-fx-border-color: #000000;" />
+            <Label fx:id="lblResName" layoutX="366.0" layoutY="220.0" prefHeight="24.0" prefWidth="149.0" text="Restaurant Name" textFill="#f96b54" underline="true">
+               <font>
+                  <Font name="Gill Sans MT" size="20.0" />
+               </font></Label>
+            <Label fx:id="lblBranch" layoutX="298.0" layoutY="220.0" text="Branch" textFill="#f96b54" underline="true">
+               <font>
+                  <Font name="Gill Sans MT" size="20.0" />
+               </font></Label>
+            <Label fx:id="lblRevFromDesserts" layoutX="112.0" layoutY="465.0" prefHeight="20.0" prefWidth="167.0" text="Revenue from desserts:">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font></Label>
+            <TextField fx:id="txtTotalRevenue" layoutX="287.0" layoutY="305.0">
+               <font>
+                  <Font name="Gill Sans MT" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="txtRevFromMainDishs" layoutX="287.0" layoutY="345.0">
+               <font>
+                  <Font name="Gill Sans MT" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="txtRevFromFirstDishs" layoutX="287.0" layoutY="385.0">
+               <font>
+                  <Font name="Gill Sans MT" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="txtRevFromDrinks" layoutX="287.0" layoutY="425.0">
+               <font>
+                  <Font name="Gill Sans MT" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="txtRevFromDesserts" layoutX="287.0" layoutY="465.0">
+               <font>
+                  <Font name="Gill Sans MT" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="txtNumOfMainDishs" layoutX="287.0" layoutY="560.0">
+               <font>
+                  <Font name="Gill Sans MT" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="txtNumberOfFirstDishs" layoutX="287.0" layoutY="600.0">
+               <font>
+                  <Font name="Gill Sans MT" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="txtNumberOfDrinks" layoutX="287.0" layoutY="640.0">
+               <font>
+                  <Font name="Gill Sans MT" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="txtNumberOfDesserts" layoutX="287.0" layoutY="720.0">
+               <font>
+                  <Font name="Gill Sans MT" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="txtnumberOfOrders" layoutX="287.0" layoutY="680.0">
+               <font>
+                  <Font name="Gill Sans MT" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="txtNumbersOFDelays" layoutX="304.0" layoutY="820.0">
+               <font>
+                  <Font name="Gill Sans MT" size="15.0" />
+               </font></TextField>
+            <Text layoutX="86.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monthly Reports:" textAlignment="CENTER" underline="true" wrappingWidth="207.955078125">
+               <font>
+                  <Font name="Gill Sans MT" size="28.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnBack" layoutX="259.0" layoutY="906.0" mnemonicParsing="false" onAction="#Back" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #F96B54; -fx-border-color: #000000;" text="Back">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Button>
+            <ImageView blendMode="DARKEN" fitHeight="98.0" fitWidth="221.0" layoutX="195.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@bmLogo.jpeg" />
+               </image>
+            </ImageView>
+            <Text layoutX="107.0" layoutY="542.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order's Report:" textAlignment="CENTER" wrappingWidth="180.955078125">
+               <font>
+                  <Font name="Gill Sans MT" size="23.0" />
+               </font>
+            </Text>
+            <Text layoutX="108.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Revenue Report:" textAlignment="CENTER" wrappingWidth="180.955078125">
+               <font>
+                  <Font name="Gill Sans MT" size="23.0" />
+               </font>
+            </Text>
+            <Label fx:id="lblRevFromDesserts1" layoutX="126.0" layoutY="425.0" prefHeight="20.0" prefWidth="149.0" text="Revenue from drinks:">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRevFromDesserts11" layoutX="101.0" layoutY="385.0" prefHeight="20.0" prefWidth="181.0" text="Revenue from first dish's:">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRevFromDesserts112" layoutX="172.0" layoutY="305.0" prefHeight="20.0" prefWidth="107.0" text="Total revenue:">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRevFromDesserts111" layoutX="94.0" layoutY="345.0" prefHeight="20.0" prefWidth="191.0" text="Revenue from main dish's:">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRevFromDesserts1121" layoutX="116.0" layoutY="563.0" prefHeight="20.0" prefWidth="173.0" text="Number of main dish's:">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRevFromDesserts11211" layoutX="122.0" layoutY="603.0" prefHeight="20.0" prefWidth="167.0" text="Number of first dish's:">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRevFromDesserts112122" layoutX="108.0" layoutY="722.0" prefHeight="20.0" prefWidth="173.0" text="Total number of orders:">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtValidOrders" layoutX="303.0" layoutY="860.0">
+               <font>
+                  <Font name="Gill Sans MT" size="15.0" />
+               </font></TextField>
+            <Label fx:id="lblRevFromDesserts1121221" layoutX="107.0" layoutY="820.0" prefHeight="20.0" prefWidth="191.0" text="Number of late deliveries:">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRevFromDesserts11212211" layoutX="90.0" layoutY="862.0" prefHeight="20.0" prefWidth="215.0" text="Number of deliveries on time:">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

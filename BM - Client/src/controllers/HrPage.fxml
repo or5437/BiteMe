@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="796.0" style="-fx-background-color: #FEF5D1;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HrController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="16.0" prefHeight="134.0" prefWidth="214.0" style="-fx-border-color: #000000;" />
+      <ImageView blendMode="DARKEN" fitHeight="65.0" fitWidth="85.0" layoutX="673.0" layoutY="11.0" onMouseClicked="#Mail_Box" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/controllers/mailIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="MULTIPLY" fitHeight="106.0" fitWidth="277.0" layoutX="270.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/controllers/bmLogo.jpeg" />
+         </image>
+      </ImageView>
+      <Text fx:id="ContactUS1" layoutX="24.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" underline="true" wrappingWidth="45.0">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="ContactUS11" layoutX="24.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time:" underline="true" wrappingWidth="45.0">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblDate" layoutX="63.0" layoutY="21.0" prefHeight="22.0" prefWidth="113.0" textFill="RED">
+         <font>
+            <Font name="Gill Sans MT" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="64.0" layoutY="52.0" prefHeight="22.0" prefWidth="113.0" textFill="RED">
+         <font>
+            <Font name="Gill Sans MT" size="14.0" />
+         </font>
+      </Label>
+      <Text fx:id="ContactUS21" layoutX="350.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello" wrappingWidth="53.0">
+         <font>
+            <Font name="Gill Sans MT" size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="ContactUS111" layoutX="24.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status:" underline="true" wrappingWidth="62.0">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblPermission" layoutX="100.0" layoutY="89.0" prefHeight="17.0" prefWidth="122.0" textFill="RED">
+         <font>
+            <Font name="Gill Sans MT" size="14.0" />
+         </font>
+      </Label>
+      <Text fx:id="ContactUS1111" layoutX="24.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Permission:" underline="true" wrappingWidth="91.0">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblStatus" layoutX="71.0" layoutY="122.0" prefHeight="17.0" prefWidth="113.0" textFill="RED">
+         <font>
+            <Font name="Gill Sans MT" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblName" layoutX="404.0" layoutY="119.0" prefHeight="27.0" prefWidth="113.0">
+         <font>
+            <Font name="Gill Sans MT" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="291.0" layoutY="358.0" mnemonicParsing="false" onAction="#btnRegBusiness" prefHeight="34.0" prefWidth="226.0" style="-fx-background-color: #52C252; -fx-border-color: #000000;" text="Register your business">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="351.0" layoutY="150.0" mnemonicParsing="false" onAction="#Logout" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #F96B54; -fx-border-color: #000000;" text="Logout">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblCountMsg" layoutX="653.0" layoutY="76.0" prefHeight="26.0" prefWidth="135.0" textAlignment="CENTER" textFill="#f96b54">
+         <font>
+            <Font name="Gill Sans MT" size="16.0" />
+         </font>
+      </Label>
+      <ImageView blendMode="DARKEN" fitHeight="116.0" fitWidth="122.0" layoutX="352.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/controllers/BusIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="DARKEN" fitHeight="65.0" fitWidth="71.0" layoutX="439.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/controllers/BusIcon2.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblRegBlock" layoutX="270.0" layoutY="400.0" prefHeight="21.0" prefWidth="267.0" textFill="#f96b54">
+         <font>
+            <Font name="Gill Sans MT" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

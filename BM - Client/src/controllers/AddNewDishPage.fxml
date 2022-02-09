@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="437.0" prefWidth="515.0" style="-fx-background-color: #FEF5D1;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddNewDishController">
+   <children>
+      <TextField fx:id="txtDishName" layoutX="138.0" layoutY="206.0" prefHeight="25.0" prefWidth="179.0">
+         <font>
+            <Font name="Gill Sans MT" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="txtDishPrice" layoutX="138.0" layoutY="250.0">
+         <font>
+            <Font name="Gill Sans MT" size="13.0" />
+         </font></TextField>
+      <Label fx:id="lblErrorName" layoutX="329.0" layoutY="209.0" prefHeight="19.0" prefWidth="179.0" textFill="#f96b54">
+         <font>
+            <Font name="Gill Sans MT" size="16.0" />
+         </font></Label>
+      <Label fx:id="lblErrorPrice" layoutX="329.0" layoutY="251.0" prefHeight="19.0" prefWidth="179.0" textFill="#f96b54">
+         <font>
+            <Font name="Gill Sans MT" size="16.0" />
+         </font></Label>
+      <Label fx:id="lblDishSituation" layoutX="50.0" layoutY="344.0" prefHeight="17.0" prefWidth="326.0" textFill="#f96b54">
+         <font>
+            <Font name="Gill Sans MT" size="16.0" />
+         </font></Label>
+      <CheckBox layoutX="110.0" layoutY="303.0" mnemonicParsing="false" onAction="#clickSizeCBox" text="Size">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font></CheckBox>
+      <CheckBox layoutX="227.0" layoutY="303.0" mnemonicParsing="false" onAction="#clickDonenessCBox" text="Doneness">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font></CheckBox>
+      <ComboBox fx:id="cmbDishType" layoutX="138.0" layoutY="163.0" prefWidth="150.0" />
+      <Text layoutX="37.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a new dish to the menu:" textAlignment="CENTER" underline="true" wrappingWidth="341.955078125">
+         <font>
+            <Font name="Gill Sans MT" size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="32.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dish Name:" wrappingWidth="102.0">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="32.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dish Price:" wrappingWidth="102.0">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="32.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dish Item:" wrappingWidth="89.0">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="219.0" layoutY="385.0" mnemonicParsing="false" onAction="#btnAddDish" prefHeight="40.0" prefWidth="139.0" style="-fx-background-color: #52C252; -fx-border-color: #000000;" text="Add">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="42.0" layoutY="385.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #F96B54; -fx-border-color: #000000;" text="Back">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Button>
+      <ImageView blendMode="DARKEN" fitHeight="115.0" fitWidth="118.0" layoutX="390.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/controllers/DishIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="DARKEN" fitHeight="32.0" fitWidth="37.0" layoutX="315.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/controllers/addIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="DARKEN" fitHeight="150.0" fitWidth="200.0" layoutX="156.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bmLogo.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

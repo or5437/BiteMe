@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="txtDate" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="825.0" prefWidth="465.0" style="-fx-background-color: #FEF5D1;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.OrderInvoiceController">
+   <children>
+      <AnchorPane layoutX="11.0" layoutY="651.0" prefHeight="63.0" prefWidth="444.0" style="-fx-border-color: #000000;" />
+      <AnchorPane layoutX="11.0" layoutY="378.0" prefHeight="264.0" prefWidth="444.0" style="-fx-border-color: #000000;">
+         <children>
+            <Label fx:id="lblDate" alignment="CENTER" layoutX="202.0" layoutY="6.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" textFill="#f96b54">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblHour" alignment="CENTER" layoutX="202.0" layoutY="35.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" textFill="#f96b54">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblShipmentMet" alignment="CENTER" layoutX="201.0" layoutY="123.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" textFill="#f96b54">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblNumPar" alignment="CENTER" layoutX="202.0" layoutY="153.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" textFill="#f96b54">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRobot" alignment="CENTER" layoutX="201.0" layoutY="181.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" textFill="#f96b54">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRecName" alignment="CENTER" layoutX="202.0" layoutY="210.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" textFill="#f96b54">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblRecPhone" alignment="CENTER" layoutX="202.0" layoutY="238.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" textFill="#f96b54">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblAddress" alignment="CENTER" layoutX="202.0" layoutY="64.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" textFill="#f96b54">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="171.0" prefHeight="198.0" prefWidth="444.0" style="-fx-border-color: #000000;">
+         <children>
+            <Label fx:id="lblItem" alignment="CENTER" layoutX="204.0" layoutY="63.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" textFill="#f96b54">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDoneness" alignment="CENTER" layoutX="204.0" layoutY="115.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" textFill="#f96b54">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDish" alignment="CENTER" layoutX="204.0" layoutY="90.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" textFill="#f96b54">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblBranch" alignment="CENTER" layoutX="204.0" layoutY="5.0" prefHeight="17.0" prefWidth="200.0" textFill="#f96b54">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblResName" alignment="CENTER" layoutX="204.0" layoutY="34.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" textFill="#f96b54">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSize" alignment="CENTER" layoutX="204.0" layoutY="145.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" textFill="#f96b54">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblAdd" alignment="CENTER" layoutX="204.0" layoutY="175.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" textFill="#f96b54">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Text layoutX="151.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Summary" textAlignment="CENTER" underline="true" wrappingWidth="153.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtRes" layoutX="34.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Restaurant Name:" wrappingWidth="130.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtItem" layoutX="82.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item:" wrappingWidth="42.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtDish" layoutX="84.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dish:" wrappingWidth="36.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtDoneness" layoutX="70.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doneness:" wrappingWidth="82.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtSize" layoutX="83.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Size:" wrappingWidth="36.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtAdd" layoutX="22.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Additional Requests:" wrappingWidth="162.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtRes4" layoutX="76.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" wrappingWidth="42.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtHour" layoutX="75.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hour:" wrappingWidth="50.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtTypeOrder" layoutX="37.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type of order:" wrappingWidth="113.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtPrice" layoutX="70.0" layoutY="698.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price:" wrappingWidth="50.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblPrice" alignment="CENTER" layoutX="212.0" layoutY="682.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" textFill="#f96b54">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font></Label>
+      <Text fx:id="txtTypeOrder1" layoutX="63.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" wrappingWidth="73.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtTypeOrder11" layoutX="37.0" layoutY="602.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reciver Name:" wrappingWidth="120.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtTypeOrder111" layoutX="35.0" layoutY="630.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reciver Phone:" wrappingWidth="120.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtShipmentMet" layoutX="26.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shipment method: " wrappingWidth="130.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtBranch" layoutX="75.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Branch:" wrappingWidth="61.59999999999991">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="cmbSpecificDish" layoutX="123.0" layoutY="96.0" onAction="#selectSpecificDish" prefHeight="26.0" prefWidth="210.0" promptText="View selected Dishes" />
+      <Text fx:id="txtRobot" layoutX="21.0" layoutY="573.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shipment by robot:" wrappingWidth="139.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtPayMet" layoutX="30.0" layoutY="671.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment method:" wrappingWidth="146.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblPayMet" alignment="CENTER" layoutX="212.0" layoutY="655.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" textFill="#f96b54">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font></Label>
+      <Text layoutX="39.0" layoutY="729.0" strokeType="OUTSIDE" strokeWidth="0.0" text="----------------------------------------------------------------------" textAlignment="CENTER" wrappingWidth="396.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font></Text>
+      <Text fx:id="txtTPrice" layoutX="40.0" layoutY="753.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total price:" wrappingWidth="103.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblTPrice" alignment="CENTER" layoutX="140.0" layoutY="737.0" prefHeight="24.0" prefWidth="284.0" textAlignment="CENTER" textFill="#f96b54">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font></Label>
+      <Text fx:id="txtNumberPart" layoutX="17.0" layoutY="544.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Participants number: " wrappingWidth="153.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="chboxRefund" layoutX="294.0" layoutY="774.0" mnemonicParsing="false" onAction="#selectRefund" text="Select refund">
+         <font>
+            <Font name="Gill Sans MT" size="16.0" />
+         </font></CheckBox>
+      <Label fx:id="lblRefundPrice" layoutX="239.0" layoutY="800.0" prefHeight="20.0" prefWidth="210.0" textAlignment="CENTER" textFill="#f96b54">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font></Label>
+      <Button fx:id="btnBack" layoutX="5.0" layoutY="787.0" mnemonicParsing="false" onAction="#Back" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #F96B54; -fx-border-color: #000000;" text="Back">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Button>
+      <ImageView blendMode="DARKEN" fitHeight="102.0" fitWidth="232.0" layoutX="112.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/controllers/bmLogo.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnConfirm" layoutX="128.0" layoutY="768.0" mnemonicParsing="false" onAction="#ConfirmOrder" prefHeight="34.0" prefWidth="100.0" style="-fx-background-color: #52C252; -fx-border-color: #000000;" text="Confirm">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblTypeOfOrder" alignment="CENTER" layoutX="212.0" layoutY="470.0" prefHeight="17.0" prefWidth="200.0" textAlignment="CENTER" textFill="#f96b54">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

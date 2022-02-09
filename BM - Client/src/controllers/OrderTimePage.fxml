@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="372.0" prefWidth="570.0" style="-fx-background-color: #FEF5D1;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.OrderTimeController">
+   <children>
+      <TextField fx:id="txtMinutes" layoutX="231.0" layoutY="207.0" onAction="#selectMinute" prefHeight="26.0" prefWidth="48.0" promptText="00">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font></TextField>
+      <Text fx:id="txtRes" layoutX="27.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose a date:" wrappingWidth="130.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="21.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="datePickerDate" layoutX="172.0" layoutY="164.0" onAction="#selectDate" promptText="Date" />
+      <Text fx:id="txtRes1" layoutX="31.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter an hour:" wrappingWidth="130.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtHours" layoutX="173.0" layoutY="207.0" onAction="#selectHour" prefHeight="26.0" prefWidth="48.0" promptText="00">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font></TextField>
+      <Text fx:id="txtRes11" layoutX="224.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" wrappingWidth="7.55859375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="radBtnTA" layoutX="110.0" layoutY="253.0" mnemonicParsing="false" onAction="#selectTakeAway" text="Take Away from ">
+         <toggleGroup>
+            <ToggleGroup fx:id="TypeOfOrder" />
+         </toggleGroup>
+         <font>
+            <Font name="Gill Sans MT" size="16.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="radBtnShip" layoutX="346.0" layoutY="255.0" mnemonicParsing="false" onAction="#selectShipment" text="Shipment" toggleGroup="$TypeOfOrder">
+         <font>
+            <Font name="Gill Sans MT" size="16.0" />
+         </font></RadioButton>
+      <Label fx:id="labelRes" layoutX="250.0" layoutY="255.0" prefHeight="18.0" prefWidth="73.0">
+         <font>
+            <Font name="Gill Sans MT" size="16.0" />
+         </font></Label>
+      <Label fx:id="lblMsgDate" layoutX="377.0" layoutY="167.0" prefHeight="18.0" prefWidth="158.0" textAlignment="CENTER" textFill="#f96b54">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font></Label>
+      <Label fx:id="lblMsgTime" layoutX="285.0" layoutY="211.0" prefHeight="18.0" prefWidth="276.0" textAlignment="CENTER" textFill="#f96b54">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font></Label>
+      <ImageView blendMode="DARKEN" fitHeight="102.0" fitWidth="232.0" layoutX="180.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/controllers/bmLogo.jpeg" />
+         </image>
+      </ImageView>
+      <Text layoutX="20.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="When you will want to receive the order?" textAlignment="CENTER" underline="true" wrappingWidth="494.955078125">
+         <font>
+            <Font name="Gill Sans MT" size="28.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnNext" layoutX="296.0" layoutY="316.0" mnemonicParsing="false" onAction="#Next" prefHeight="33.0" prefWidth="79.0" style="-fx-background-color: #52C252; -fx-border-color: #000000;" text="Next">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="71.0" layoutY="316.0" mnemonicParsing="false" onAction="#Back" prefHeight="40.0" prefWidth="79.0" style="-fx-background-color: #F96B54; -fx-border-color: #000000;" text="Back">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Button>
+      <ImageView blendMode="DARKEN" fitHeight="94.0" fitWidth="90.0" layoutX="467.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/controllers/TimeIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
