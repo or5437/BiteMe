@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="831.0" style="-fx-background-color: #FEF5D1;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ManagerMailBoxController">
+   <children>
+      <TableView fx:id="tblMailBox" layoutX="26.0" layoutY="157.0" onMouseClicked="#getSelected" prefHeight="220.0" prefWidth="780.0">
+         <columns>
+            <TableColumn fx:id="colFromHrId" prefWidth="109.59996795654297" text="From HR ID" />
+            <TableColumn fx:id="colDate" prefWidth="96.0" text="Date" />
+            <TableColumn fx:id="colHour" prefWidth="89.0" text="Hour" />
+            <TableColumn fx:id="colMessage" prefWidth="377.0" text="Message" />
+            <TableColumn fx:id="colStatus" prefWidth="107.0" text="Status" />
+         </columns>
+      </TableView>
+      <Label fx:id="lblMsg" layoutX="142.0" layoutY="384.0" prefHeight="18.0" prefWidth="564.0" textAlignment="CENTER" textFill="#f96b54">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font></Label>
+      <Text fx:id="txtMailBox1" layoutX="130.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manager MailBox" textAlignment="CENTER" underline="true" wrappingWidth="245.13671875">
+         <font>
+            <Font name="Gill Sans MT" size="30.0" />
+         </font>
+      </Text>
+      <ImageView blendMode="DARKEN" fitHeight="102.0" fitWidth="232.0" layoutX="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/controllers/bmLogo.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnClear" layoutX="474.0" layoutY="408.0" mnemonicParsing="false" onAction="#selectClear" prefHeight="34.0" prefWidth="232.0" style="-fx-background-color: #52C252; -fx-border-color: #000000;" text="Clear all messages">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="26.0" layoutY="442.0" mnemonicParsing="false" onAction="#Back" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #F96B54; -fx-border-color: #000000;" text="Back">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnConfirm" layoutX="142.0" layoutY="408.0" mnemonicParsing="false" onAction="#Confirm" prefHeight="34.0" prefWidth="100.0" style="-fx-background-color: #52C252; -fx-border-color: #000000;" text="Confirm">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="120.0" fitWidth="116.0" layoutX="26.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/controllers/ManagerIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

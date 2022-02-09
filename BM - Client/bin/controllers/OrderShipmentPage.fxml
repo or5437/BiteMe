@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="644.0" style="-fx-background-color: #FEF5D1;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.OrderShipmentController">
+   <children>
+      <Text fx:id="txtRes" layoutX="78.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter address:" wrappingWidth="125.0">
+         <font>
+            <Font name="Gill Sans MT" size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtRes1" layoutX="44.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter receiver name:" wrappingWidth="178.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtRes11" layoutX="37.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter receiver phone:" wrappingWidth="186.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtRes111" layoutX="19.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose shipment type:" wrappingWidth="206.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="21.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="radBtnBasic" layoutX="235.0" layoutY="291.0" mnemonicParsing="false" onAction="#selectBasic" prefHeight="27.0" prefWidth="85.0" text="Basic">
+         <toggleGroup>
+            <ToggleGroup fx:id="shipmentType" />
+         </toggleGroup>
+         <font>
+            <Font name="Gill Sans MT" size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radBtnShared" layoutX="323.0" layoutY="293.0" mnemonicParsing="false" onAction="#selectShared" prefHeight="23.0" prefWidth="85.0" text="Shared" toggleGroup="$shipmentType">
+         <font>
+            <Font name="Gill Sans MT" size="16.0" />
+         </font></RadioButton>
+      <TextField fx:id="txtAdd" layoutX="232.0" layoutY="161.0" onAction="#selectAddress" prefHeight="25.0" prefWidth="155.0">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtRecName" layoutX="232.0" layoutY="204.0" onAction="#selectRecName" prefHeight="25.0" prefWidth="155.0">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtRecPhone" layoutX="232.0" layoutY="248.0" onAction="#selectRecPhone" prefHeight="25.0" prefWidth="155.0">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font></TextField>
+      <Label fx:id="lblMsgAddress" layoutX="402.0" layoutY="165.0" prefHeight="17.0" prefWidth="194.0" textFill="#f96b54">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font></Label>
+      <Label fx:id="lblMsgRecPhone" layoutX="402.0" layoutY="252.0" prefHeight="17.0" prefWidth="194.0" textFill="#f96b54">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font></Label>
+      <Label fx:id="lblMsgRecName" layoutX="402.0" layoutY="208.0" prefHeight="18.0" prefWidth="194.0" textFill="#f96b54">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font></Label>
+      <CheckBox fx:id="cboxRobot" layoutX="226.0" layoutY="376.0" mnemonicParsing="false" onAction="#selectRobot" prefHeight="27.0" prefWidth="168.0" text="Shipment by robot">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font></CheckBox>
+      <TextField fx:id="txtNumber" layoutX="257.0" layoutY="331.0" prefHeight="25.0" prefWidth="109.0">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font></TextField>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fx:id="txtEnterNumber" layoutX="2.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter number of participants:" textAlignment="CENTER" wrappingWidth="247.5999755859375">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblMsgNumber" layoutX="376.0" layoutY="335.0" prefHeight="18.0" prefWidth="262.0" textAlignment="CENTER" textFill="#f96b54">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font></Label>
+      <Text layoutX="22.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Where you'd like to recive your order?" textAlignment="CENTER" underline="true" wrappingWidth="451.955078125">
+         <font>
+            <Font name="Gill Sans MT" size="28.0" />
+         </font>
+      </Text>
+      <ImageView blendMode="DARKEN" fitHeight="98.0" fitWidth="221.0" layoutX="212.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/controllers/bmLogo.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBack" layoutX="160.0" layoutY="418.0" mnemonicParsing="false" onAction="#Back" prefHeight="40.0" prefWidth="85.0" style="-fx-background-color: #F96B54; -fx-border-color: #000000;" text="Back">
+         <font>
+            <Font name="Gill Sans MT" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNext" layoutX="374.0" layoutY="418.0" mnemonicParsing="false" onAction="#Next" prefHeight="40.0" prefWidth="85.0" style="-fx-background-color: #52C252; -fx-border-color: #000000;" text="Next">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Button>
+      <ImageView blendMode="DARKEN" fitHeight="96.0" fitWidth="115.0" layoutX="525.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/controllers/DelivIcon.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
