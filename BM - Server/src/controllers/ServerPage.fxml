@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="744.0" style="-fx-background-color: #FEF5D1;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ServerPageController">
+   <children>
+      <Button fx:id="btnExit" layoutX="656.0" layoutY="16.0" mnemonicParsing="false" onAction="#Exit" prefHeight="28.0" prefWidth="67.0" style="-fx-background-color: #F96B54; -fx-border-color: #000000;" text="Exit">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Button>
+      <ImageView blendMode="DARKEN" fitHeight="94.0" fitWidth="249.0" layoutX="276.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bmLogo.jpeg" />
+         </image>
+      </ImageView>
+      <Text layoutX="426.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connected clients" underline="true">
+         <font>
+            <Font name="Gill Sans MT" size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="50.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Server Configuration" underline="true">
+         <font>
+            <Font name="Gill Sans MT" size="28.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnConnect" layoutX="195.0" layoutY="438.0" mnemonicParsing="false" onAction="#Connect" prefHeight="38.0" prefWidth="116.0" style="-fx-background-color: #52C252; -fx-border-color: #000000;" text="Connect">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblClient" layoutX="335.0" layoutY="157.0" prefHeight="154.0" prefWidth="388.0" style="-fx-border-color: #060000;">
+         <columns>
+            <TableColumn fx:id="colIP" prefWidth="125.5999698638916" text="IP Address" />
+            <TableColumn fx:id="colHostName" prefWidth="163.20001220703125" text="Host Name" />
+            <TableColumn fx:id="colStatus" prefWidth="97.60000610351562" text="Status" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtIP" layoutX="143.0" layoutY="172.0" style="-fx-border-color: #060000;">
+         <font>
+            <Font name="Gill Sans MT" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtPort" layoutX="143.0" layoutY="220.0" style="-fx-border-color: #060000;">
+         <font>
+            <Font name="Gill Sans MT" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtDBname" layoutX="143.0" layoutY="268.0" style="-fx-border-color: #060000;">
+         <font>
+            <Font name="Gill Sans MT" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtDBuser" layoutX="143.0" layoutY="316.0" style="-fx-border-color: #060000;">
+         <font>
+            <Font name="Gill Sans MT" size="12.0" />
+         </font></TextField>
+      <Label fx:id="lblPort" layoutX="80.0" layoutY="220.0" prefHeight="28.0" prefWidth="41.0" text="Port:">
+         <font>
+            <Font name="Gill Sans MT" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblIP" layoutX="32.0" layoutY="172.0" prefHeight="28.0" prefWidth="90.0" text="IP Address:">
+         <font>
+            <Font name="Gill Sans MT" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDBuser" layoutX="49.0" layoutY="316.0" text="DB User:">
+         <font>
+            <Font name="Gill Sans MT" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDBpassword" layoutX="12.0" layoutY="364.0" text="DB Password:">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDBname" layoutX="37.0" layoutY="268.0" text="DB Name:">
+         <font>
+            <Font name="Gill Sans MT" size="19.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordField" layoutX="143.0" layoutY="364.0" style="-fx-border-color: #060000;">
+         <font>
+            <Font name="Gill Sans MT" size="12.0" />
+         </font></PasswordField>
+      <Button fx:id="btnDiscconect" layoutX="25.0" layoutY="438.0" mnemonicParsing="false" onAction="#Disconnect" prefHeight="40.0" prefWidth="122.0" style="-fx-background-color: #F96B54; -fx-border-color: #000000;" text="Disconnect">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="textArea" layoutX="335.0" layoutY="369.0" prefHeight="160.0" prefWidth="388.0" style="-fx-border-color: #060000;" />
+      <Button fx:id="btnImportData" layoutX="28.0" layoutY="496.0" mnemonicParsing="false" onAction="#ImportData" prefHeight="28.0" prefWidth="283.0" style="-fx-background-color: #52C252; -fx-border-color: #000000;" text="Import Data">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Button>
+      <Text layoutX="481.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Console" underline="true">
+         <font>
+            <Font name="Gill Sans MT" size="28.0" />
+         </font>
+      </Text>
+      <ImageView blendMode="DARKEN" fitHeight="28.0" fitWidth="41.0" layoutX="87.0" layoutY="502.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@importIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
