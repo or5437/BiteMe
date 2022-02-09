@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="0.0" prefWidth="66.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GenerateQuarterlyReportController">
+   <children>
+      <AnchorPane layoutX="-65.0" layoutY="-209.0" prefHeight="521.0" prefWidth="600.0" style="-fx-background-color: #FEF5D1;">
+         <children>
+            <ComboBox fx:id="cmbQuarter" layoutX="189.0" layoutY="396.0" prefWidth="150.0" />
+            <Label fx:id="lblErrormsg" layoutX="126.0" layoutY="429.0" prefHeight="18.0" prefWidth="274.0" textFill="#f96b54">
+               <font>
+                  <Font name="Gill Sans MT" size="16.0" />
+               </font></Label>
+            <TextField fx:id="txtBranch" layoutX="189.0" layoutY="350.0" prefHeight="25.0" prefWidth="150.0">
+               <font>
+                  <Font name="Gill Sans MT" size="15.0" />
+               </font></TextField>
+            <Text layoutX="93.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generate quarterly repotrs" textAlignment="CENTER" underline="true" wrappingWidth="341.955078125">
+               <font>
+                  <Font name="Gill Sans MT" size="28.0" />
+               </font>
+            </Text>
+            <Text layoutX="113.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Branch:" wrappingWidth="65.0">
+               <font>
+                  <Font name="Gill Sans MT" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="106.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quarter:" wrappingWidth="74.0">
+               <font>
+                  <Font name="Gill Sans MT" size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnGenerate" layoutX="320.0" layoutY="460.0" mnemonicParsing="false" onAction="#Generate" prefHeight="40.0" prefWidth="115.0" style="-fx-background-color: #52C252; -fx-border-color: #000000;" text="Generate">
+               <font>
+                  <Font name="Gill Sans MT" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnBack" layoutX="120.0" layoutY="460.0" mnemonicParsing="false" onAction="#Back" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #F96B54; -fx-border-color: #000000;" text="Back">
+               <font>
+                  <Font name="Gill Sans MT" size="20.0" />
+               </font>
+            </Button>
+            <ImageView blendMode="DARKEN" fitHeight="91.0" fitWidth="215.0" layoutX="215.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/controllers/bmLogo.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView blendMode="DARKEN" fitHeight="154.0" fitWidth="134.0" layoutX="456.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/controllers/Genrep.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

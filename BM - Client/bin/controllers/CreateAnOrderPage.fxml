@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="660.0" style="-fx-background-color: #FEF5D1;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CreateAnOrderController">
+   <children>
+      <ComboBox fx:id="cmbRestaurant" layoutX="244.0" layoutY="210.0" onAction="#selectRes" prefHeight="25.0" prefWidth="161.0" />
+      <ComboBox fx:id="cmbItem" layoutX="244.0" layoutY="257.0" onAction="#selectItem" prefHeight="25.0" prefWidth="161.0" />
+      <ComboBox fx:id="cmbDish" layoutX="245.0" layoutY="302.0" onAction="#selectDish" prefHeight="25.0" prefWidth="161.0" />
+      <ComboBox fx:id="cmbDoneness" layoutX="245.0" layoutY="350.0" onAction="#selectDoneness" prefHeight="25.0" prefWidth="161.0" />
+      <ComboBox fx:id="cmbSize" layoutX="245.0" layoutY="397.0" onAction="#selectSize" prefHeight="25.0" prefWidth="161.0" />
+      <TextArea fx:id="txtAreaAdditional" layoutX="240.0" layoutY="444.0" prefHeight="52.0" prefWidth="169.0">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font></TextArea>
+      <Text fx:id="txtBranch" layoutX="14.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="359.55859375">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="cmbBranch" layoutX="244.0" layoutY="161.0" onAction="#selectBranch" prefHeight="25.0" prefWidth="161.0" />
+      <Label fx:id="lblMsgNext" layoutX="85.0" layoutY="625.0" prefHeight="18.0" prefWidth="126.0" />
+      <Text layoutX="41.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create your Order:" textAlignment="CENTER" underline="true" wrappingWidth="247.55859375">
+         <font>
+            <Font name="Gill Sans MT" size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="79.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose a branch:" wrappingWidth="143.0">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="51.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose a restaurant:" wrappingWidth="175.0">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="90.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose an item:" wrappingWidth="136.0">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="104.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose a dish:" wrappingWidth="126.0">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="62.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose a doneness:" wrappingWidth="169.0">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="108.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose a size:" wrappingWidth="119.0">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="20.0" layoutY="463.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter additional requests:" wrappingWidth="211.7260284423828">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnNext" layoutX="523.0" layoutY="530.0" mnemonicParsing="false" onAction="#Next" prefHeight="40.0" prefWidth="85.0" style="-fx-background-color: #52C252; -fx-border-color: #000000;" text="Next">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="28.0" layoutY="530.0" mnemonicParsing="false" onAction="#Back" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #F96B54; -fx-border-color: #000000;" text="Back">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAddDish" layoutX="277.0" layoutY="530.0" mnemonicParsing="false" onAction="#selectAddDish" prefHeight="34.0" prefWidth="107.0" style="-fx-background-color: #52C252; -fx-border-color: #000000;" text="Add Dish">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Button>
+      <ImageView blendMode="MULTIPLY" fitHeight="108.0" fitWidth="230.0" layoutX="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/controllers/bmLogo.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="DARKEN" fitHeight="293.0" fitWidth="230.0" layoutX="417.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/controllers/ChefIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
