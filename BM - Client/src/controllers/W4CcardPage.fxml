@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="328.0" prefWidth="485.0" style="-fx-background-color: #FEF5D1;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.W4CcardController">
+   <children>
+      <TextField fx:id="txtW4C" layoutX="211.0" layoutY="217.0" onKeyPressed="#EnterW4C">
+         <font>
+            <Font name="Gill Sans MT" size="16.0" />
+         </font></TextField>
+      <Label fx:id="lblMsg" layoutX="149.0" layoutY="254.0" prefHeight="17.0" prefWidth="143.0" textAlignment="CENTER" textFill="#f96b54">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font></Label>
+      <ImageView blendMode="DARKEN" fitHeight="89.0" fitWidth="232.0" layoutX="134.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/controllers/bmLogo.jpeg" />
+         </image>
+      </ImageView>
+      <Text layoutX="11.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Identification by W4C card:" textAlignment="CENTER" underline="true" wrappingWidth="342.955078125">
+         <font>
+            <Font name="Gill Sans MT" size="28.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnQR" layoutX="31.0" layoutY="141.0" mnemonicParsing="false" onAction="#selectQR" prefHeight="54.0" prefWidth="302.0" style="-fx-background-color: #52C252; -fx-border-color: #000000;" text="Use QR Code">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Button>
+      <ImageView blendMode="DARKEN" fitHeight="54.0" fitWidth="103.0" layoutX="269.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/controllers/qrCode.gif" />
+         </image>
+      </ImageView>
+      <Text layoutX="26.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter W4C manualy:" textAlignment="CENTER" wrappingWidth="182.955078125">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnBack" layoutX="26.0" layoutY="277.0" mnemonicParsing="false" onAction="#Back" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #F96B54; -fx-border-color: #000000;" text="Back">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNext" layoutX="309.0" layoutY="277.0" mnemonicParsing="false" onAction="#Next" prefHeight="33.0" prefWidth="90.0" style="-fx-background-color: #52C252; -fx-border-color: #000000;" text="Next">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
